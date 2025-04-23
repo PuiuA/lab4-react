@@ -1,0 +1,212 @@
+[
+  {
+    "question": "Ce tip de fișier este .jpg?",
+    "category": "informatica",
+    "difficulty": "usor",
+    "options": ["Imagine", "Document text"],
+    "correctAnswer": "Imagine"
+  },
+  {
+    "question": "Care limbaj este folosit frecvent pentru pagini web?",
+    "category": "informatica",
+    "difficulty": "usor",
+    "options": ["HTML", "C++"],
+    "correctAnswer": "HTML"
+  },
+  {
+    "question": "Ce face comanda Ctrl + S?",
+    "category": "informatica",
+    "difficulty": "usor",
+    "options": ["Salvează documentul", "Închide programul"],
+    "correctAnswer": "Salvează documentul"
+  },
+  {
+    "question": "Ce este RAM-ul?",
+    "category": "informatica",
+    "difficulty": "usor",
+    "options": ["Memorie temporară", "Procesor"],
+    "correctAnswer": "Memorie temporară"
+  },
+  {
+    "question": "Care este un sistem de operare?",
+    "category": "informatica",
+    "difficulty": "usor",
+    "options": ["Windows", "Photoshop"],
+    "correctAnswer": "Windows"
+  },
+  {
+    "question": "Ce face funcția recursivă în programare?",
+    "category": "informatica",
+    "difficulty": "greu",
+    "options": ["Se apelează pe sine", "Rulează o singură dată"],
+    "correctAnswer": "Se apelează pe sine"
+  },
+  {
+    "question": "Ce înseamnă Big O(n^2)?",
+    "category": "informatica",
+    "difficulty": "greu",
+    "options": ["Timp de execuție quadratic", "Timp constant"],
+    "correctAnswer": "Timp de execuție quadratic"
+  },
+  {
+    "question": "Ce este o structură de date?",
+    "category": "informatica",
+    "difficulty": "greu",
+    "options": ["Mod de organizare a datelor", "Fișier executabil"],
+    "correctAnswer": "Mod de organizare a datelor"
+  },
+  {
+    "question": "În rețelistică, ce reprezintă IP?",
+    "category": "informatica",
+    "difficulty": "greu",
+    "options": ["Internet Protocol", "Internal Program"],
+    "correctAnswer": "Internet Protocol"
+  },
+  {
+    "question": "Ce face comanda git clone?",
+    "category": "informatica",
+    "difficulty": "greu",
+    "options": ["Creează o copie a unui repository", "Șterge repository-ul local"],
+    "correctAnswer": "Creează o copie a unui repository"
+  },
+  {
+    "question": "Cât este 5 + 3?",
+    "category": "matematica",
+    "difficulty": "usor",
+    "options": ["8", "10"],
+    "correctAnswer": "8"
+  },
+  {
+    "question": "Care este rezultatul lui 2 × 6?",
+    "category": "matematica",
+    "difficulty": "usor",
+    "options": ["12", "8"],
+    "correctAnswer": "12"
+  },
+  {
+    "question": "Cât este 100 împărțit la 10?",
+    "category": "matematica",
+    "difficulty": "usor",
+    "options": ["10", "20"],
+    "correctAnswer": "10"
+  },
+  {
+    "question": "Care este pătratul lui 4?",
+    "category": "matematica",
+    "difficulty": "usor",
+    "options": ["16", "8"],
+    "correctAnswer": "16"
+  },
+  {
+    "question": "Cât este 9 − 4?",
+    "category": "matematica",
+    "difficulty": "usor",
+    "options": ["5", "6"],
+    "correctAnswer": "5"
+  },
+  {
+    "question": "Ce este o funcție injectivă?",
+    "category": "matematica",
+    "difficulty": "greu",
+    "options": ["Fiecare element din domeniu are o imagine unică", "Două elemente pot avea aceeași imagine"],
+    "correctAnswer": "Fiecare element din domeniu are o imagine unică"
+  },
+  {
+    "question": "Cât este limita: lim (1/x) când x → ∞?",
+    "category": "matematica",
+    "difficulty": "greu",
+    "options": ["0", "1"],
+    "correctAnswer": "0"
+  },
+  {
+    "question": "Soluția ecuației x^2 - 4x + 4 = 0 este:",
+    "category": "matematica",
+    "difficulty": "greu",
+    "options": ["x = 2", "x = -2"],
+    "correctAnswer": "x = 2"
+  },
+  {
+    "question": "Ce fel de triunghi are un unghi de 90°?",
+    "category": "matematica",
+    "difficulty": "greu",
+    "options": ["Dreptunghic", "Isoscel"],
+    "correctAnswer": "Dreptunghic"
+  },
+  {
+    "question": "Derivata lui f(x) = x^3 este:",
+    "category": "matematica",
+    "difficulty": "greu",
+    "options": ["3x^2", "x^2"],
+    "correctAnswer": "3x^2"
+  },
+  {
+    "question": "Cine a fost primul domnitor al Moldovei?",
+    "category": "istorie",
+    "difficulty": "usor",
+    "options": ["Dragoș", "Ștefan cel Mare"],
+    "correctAnswer": "Dragoș"
+  },
+  {
+    "question": "În ce an a avut loc Marea Unire?",
+    "category": "istorie",
+    "difficulty": "usor",
+    "options": ["1918", "1945"],
+    "correctAnswer": "1918"
+  },
+  {
+    "question": "Cine a fost conducătorul Imperiului Roman?",
+    "category": "istorie",
+    "difficulty": "usor",
+    "options": ["Cezar", "Napoleon"],
+    "correctAnswer": "Cezar"
+  },
+  {
+    "question": "În ce secol a avut loc Revoluția Franceză?",
+    "category": "istorie",
+    "difficulty": "usor",
+    "options": ["Secolul XVIII", "Secolul XX"],
+    "correctAnswer": "Secolul XVIII"
+  },
+  {
+    "question": "Cine a descoperit America?",
+    "category": "istorie",
+    "difficulty": "usor",
+    "options": ["Cristofor Columb", "Vasco da Gama"],
+    "correctAnswer": "Cristofor Columb"
+  },
+  {
+    "question": "Ce tratat a pus capăt Primului Război Mondial?",
+    "category": "istorie",
+    "difficulty": "greu",
+    "options": ["Tratatul de la Versailles", "Tratatul de la Trianon"],
+    "correctAnswer": "Tratatul de la Versailles"
+  },
+  {
+    "question": "Care era capitala Daciei?",
+    "category": "istorie",
+    "difficulty": "greu",
+    "options": ["Sarmizegetusa", "Tomis"],
+    "correctAnswer": "Sarmizegetusa"
+  },
+  {
+    "question": "În ce an a început al Doilea Război Mondial?",
+    "category": "istorie",
+    "difficulty": "greu",
+    "options": ["1939", "1941"],
+    "correctAnswer": "1939"
+  },
+  {
+    "question": "Cine a fost regele României în timpul Marii Uniri?",
+    "category": "istorie",
+    "difficulty": "greu",
+    "options": ["Ferdinand I", "Carol al II-lea"],
+    "correctAnswer": "Ferdinand I"
+  },
+  {
+    "question": "Ce s-a întâmplat în 1848 în Europa?",
+    "category": "istorie",
+    "difficulty": "greu",
+    "options": ["Revoluții", "Războiul Crimeei"],
+    "correctAnswer": "Revoluții"
+  }
+]
