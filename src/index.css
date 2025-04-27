@@ -15,7 +15,7 @@
 
 body {
   margin: 0;
-  background-color: #f2f2f2; /* culoare fundal margini laterale */
+  background-color: #757575;
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -23,11 +23,31 @@ body {
 }
 
 .app {
-  background-color: #ffffff; /* fundalul div-ului de quiz */
-  width: 800px; /* latime fixă */
-  height: 100vh; /* înălțime completă */
+  background-color: #ffffff;
+  width: 800px;
+  height: 100vh;
   padding: 2rem;
   box-sizing: border-box;
-  overflow-y: auto; /* scroll vertical dacă conținutul e prea lung */
+  overflow-y: auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
+
+@media (max-width: 768px) {
+  .app {
+    width: 90%;
+    height: 100vh;
+    padding: 1rem;
+  }
+}
+
+.app.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.app.dark {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+

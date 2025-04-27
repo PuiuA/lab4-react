@@ -5,6 +5,7 @@ import Result from "./Result";
 import questionsData from "../data/questions.json";
 
 export default function QuizDiv() {
+    const [randomOrder, setRandomOrder] = useState('yes');
     const [name, setName] = useState("");
     const [category, setCategory] = useState("");
     const [difficulty, setDifficulty] = useState("");
@@ -18,6 +19,7 @@ export default function QuizDiv() {
             alert("Completeaza totul!");
             return;
         }
+
 
         let filtered = [...questionsData];
         if (category !== "mix-category")
@@ -37,6 +39,10 @@ export default function QuizDiv() {
             const count = difficulty === "mix-difficulty" ? 10 : 5;
             selected = filtered.sort(() => 0.5 - Math.random()).slice(0, count);
         }
+        if (randomOrder === "yes") {
+            selected = selected.sort(() => 0.5 - Math.random());
+        }
+
 
         localStorage.setItem("lastUserName", name);
         setQuestions(selected);
@@ -80,6 +86,8 @@ export default function QuizDiv() {
                     setCategory={setCategory}
                     difficulty={difficulty}
                     setDifficulty={setDifficulty}
+                    randomOrder={randomOrder}
+                    setRandomOrder={setRandomOrder}
                     onStart={startQuiz}
                 />
             )}

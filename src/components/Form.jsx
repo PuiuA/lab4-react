@@ -1,4 +1,4 @@
-export default function Form({ name, setName, category, setCategory, difficulty, setDifficulty, onStart }) {
+export default function Form({ name, setName, category, setCategory, difficulty, setDifficulty, randomOrder, setRandomOrder, onStart }) {
     return (
         <div className="form">
             <input
@@ -20,6 +20,12 @@ export default function Form({ name, setName, category, setCategory, difficulty,
                 <option value="greu">Greu</option>
                 <option value="mix-difficulty">Mix</option>
             </select>
+
+            <select value={randomOrder} onChange={(e) => setRandomOrder(e.target.value)}>
+                <option value="yes">Întrebări Aleator</option>
+                <option value="no">Ordine Normală</option>
+            </select>
+
             <button onClick={onStart}>Start</button>
         </div>
     );

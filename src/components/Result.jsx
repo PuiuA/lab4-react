@@ -12,23 +12,31 @@ export default function Result({ questions, answers, onRestart }) {
     useEffect(() => {
         const stored = JSON.parse(localStorage.getItem("scores")) || [];
 
-        const alreadySaved = stored.some(s => s.name === userName && s.score === score);
-        if (!alreadySaved) {
-            const newEntry = { name: userName, score };
-            const updated = [...stored, newEntry];
-            localStorage.setItem("scores", JSON.stringify(updated));
-            setScores(updated);
-        } else {
-            setScores(stored);
-        }
-    }, []);
+        const existingUser = stored.find((s) => s.name === userName);
 
+        let updatedScores;
+
+        if (existingUser) {
+            if (score > existingUser.score) {
+                updatedScores = stored.map((s) =>
+                    s.name === userName ? { ...s, score: score } : s
+                );
+            } else {
+                updatedScores = stored;
+            }
+        } else {
+            updatedScores = [...stored, { name: userName, score }];
+        }
+
+        localStorage.setItem("scores", JSON.stringify(updatedScores));
+        setScores(updatedScores);
+    }, []);
 
     return (
         <div className="results">
-            <h3>Scorul tau: {score} / {questions.length}</h3>
+            <h3>Scorul tău: {score} / {questions.length}</h3>
 
-            <h4>Greseli:</h4>
+            <h4>Întrebări greșite:</h4>
             <ul>
                 {questions.map((q, i) => (
                     answers[i] !== q.correctAnswer && (
@@ -40,18 +48,14 @@ export default function Result({ questions, answers, onRestart }) {
                 ))}
             </ul>
 
-            <h4>Istoric scoruri:</h4>
+            <h4>Scoruri maxime utilizatori:</h4>
             <ul>
                 {scores.map((s, i) => (
                     <li key={i}>{s.name} — {s.score}</li>
                 ))}
             </ul>
 
-            <button onClick={onRestart}>Reseteaza</button>
-            {/*<button onClick={() => localStorage.removeItem("scores")}>*/}
-            {/*    Sterge scorurile salvate*/}
-            {/*</button>*/}
-
+            <button onClick={onRestart}>Resetează</button>
         </div>
     );
 }
